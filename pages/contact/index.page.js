@@ -7,6 +7,7 @@ import styles from "./styles/ContactComponent.module.scss";
 import AP from "@/assets/ap_contact.png";
 import PK from "@/assets/pk_contact.png";
 import UT from "@/assets/ut_contact.png";
+import LP from "@/assets/lp_contact.png";
 import BasicButton from "@/components/BasicButton";
 
 const cardsData = [
@@ -27,6 +28,12 @@ const cardsData = [
 		src: UT,
 		alt: "Umair Tariq",
 		link: "https://github.com/bingJunior",
+	},
+	{
+		text: "Lakshit Pant",
+		src: LP,
+		alt: "Lakshit Pant",
+		link: "https://www.linkedin.com/in/wizardlocks",
 	},
 ];
 
@@ -124,7 +131,7 @@ function ContactComponent(props) {
 
 			<section className={`${styles.made_by} ${styles.contact_section}`}>
 				<p>
-					Made with <span>❤</span> by Team Pied Piper
+					Made with <span>🍕 + ☕️</span> by Team PiedPiper
 				</p>
 			</section>
 		</main>
