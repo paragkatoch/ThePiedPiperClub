@@ -1,0 +1,168 @@
+.module_cards {
+	display: grid;
+	grid-template-columns: 1fr;
+	row-gap: 18vh;
+
+	.module_card {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		column-gap: 4rem;
+		align-items: center;
+		justify-items: center;
+
+		height: 65vh;
+
+		.card_data {
+			.card_header {
+				width: fit-content;
+
+				p {
+					font-family: Open Sans;
+					font-style: normal;
+					font-weight: bold;
+					font-size: 32px;
+					line-height: 44px;
+
+					color: #0b0b0b;
+				}
+				hr.underline {
+					width: 75%;
+					height: 1px;
+					margin-top: 0.5rem;
+					margin-bottom: 2px;
+
+					background-color: #0b0b0b;
+				}
+			}
+
+			.card_description {
+				max-width: 480px;
+				margin-top: 3rem;
+				margin-bottom: 2.5rem;
+
+				p {
+					font-family: Open Sans;
+					font-style: normal;
+					font-weight: normal;
+					font-size: 21px;
+					line-height: 30px;
+					word-spacing: 0.05rem;
+
+					// color: #0b0b0b;
+					color: #0b0b0b;
+
+					// color: #0b0b00;
+				}
+			}
+		}
+		.image_container {
+			max-width: 30rem;
+			width: 80%;
+			margin: 0 auto;
+		}
+
+		.card_right hr.underline {
+			margin-left: auto;
+		}
+
+		.card_img {
+			width: 100%;
+		}
+
+		&:nth-child(even) .card_right {
+			grid-column: 1;
+			grid-row: 1;
+		}
+	}
+}
+
+@media only screen and (max-width: 1220px) {
+	.module_cards .module_card {
+		column-gap: 2rem;
+
+		.card_data {
+			.card_header p {
+				font-size: 28px;
+				line-height: 38px;
+			}
+
+			.card_description {
+				margin-top: 2.5rem;
+				margin-bottom: 2rem;
+				max-width: 400px;
+
+				p {
+					font-size: 18px;
+					line-height: 25px;
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 1040px) {
+	.module_cards .module_card .card_data {
+		.card_header p {
+			font-size: 24px;
+			line-height: 33px;
+		}
+
+		.card_description {
+			margin-top: 2rem;
+		}
+
+		.image_container {
+			width: 90%;
+		}
+	}
+}
+
+@media only screen and (max-width: 848px) {
+	.module_cards {
+		margin-top: 3rem;
+		row-gap: 10rem;
+
+		.module_card {
+			grid-template-columns: 1fr;
+			grid-template-rows: auto auto;
+			height: fit-content;
+
+			.card_data {
+				.card_header {
+					p {
+						font-size: 21px;
+						line-height: 29px;
+					}
+					hr.underline {
+						margin-top: 0.4rem;
+					}
+				}
+
+				.card_description {
+					margin-top: 30px;
+					margin-bottom: 35px;
+
+					> p {
+						font-size: 15px;
+						line-height: 24px;
+						letter-spacing: 0.05em;
+					}
+				}
+
+				.image_container {
+					width: 90%;
+					max-width: 410px;
+				}
+			}
+
+			.card_right hr.underline {
+				margin-left: initial;
+			}
+
+			.card_img {
+				grid-row: 1;
+				margin-bottom: 4rem;
+			}
+		}
+	}
+}

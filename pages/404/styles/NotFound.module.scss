@@ -1,0 +1,47 @@
+.app_notfound {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+
+	.img_container {
+		width: 80%;
+		max-width: 697px;
+
+		margin-top: 1rem;
+	}
+
+	> p {
+		margin-top: 3rem;
+
+		font-family: Gabriela;
+		font-style: normal;
+		font-weight: 500;
+		font-size: clamp(18px, 3.5vw, 28px);
+
+		letter-spacing: 0.01rem;
+		word-spacing: 0.2rem;
+		text-align: center;
+		color: #0b0b0b;
+	}
+}
+
+@media only screen and (max-width: 720px) {
+	.app_notfound .img_container {
+		width: 90%;
+		margin-top: 1rem;
+	}
+}
+
+@media screen and (min-width: 720px) and (max-width: 1080px) {
+	.app_notfound .img_container {
+		min-width: 590px;
+	}
+}
+
+@media only screen and (max-width: 640px) {
+	.app_notfound > p {
+		width: 60%;
+		word-spacing: 0.1rem;
+		letter-spacing: 0.005rem;
+	}
+}

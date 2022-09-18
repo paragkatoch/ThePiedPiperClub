@@ -1,0 +1,33 @@
+.card_button {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+
+	cursor: pointer;
+	border-radius: 8px;
+	background-color: #0b0b0b;
+	transition: all 0.3s;
+
+	&:hover {
+		transform: translateY(-4px);
+	}
+
+	a {
+		padding: 12px 20px;
+
+		font-family: Open Sans;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 15px;
+		line-height: 21px;
+		color: #fafafa;
+	}
+}
+
+@media only screen and (max-width: 848px) {
+	.card_button a {
+		font-size: 14px;
+		line-height: 18px;
+	}
+}
