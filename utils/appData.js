@@ -136,7 +136,7 @@ export const FOOTER_DATA = [
 	{
 		title: APP.NAME,
 		contents: [
-			{ name: "Home", link: "/home" },
+			{ name: "Home", link: "/" },
 			{ name: "Developer", link: "/developer" },
 			{ name: "Degree", link: "/degree" },
 			{ name: "Misc.", link: "/misc" },
